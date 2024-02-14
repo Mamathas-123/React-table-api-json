@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     axios
-      //.get('https://jsonplaceholder.typicode.com/users')
+      //.get('https://jsonplaceholder.typicode.com/users')   //this is API json data
       .get('https://opentdb.com/api.php?amount=50')
       .then(response => {
         setData(response.data.results)
